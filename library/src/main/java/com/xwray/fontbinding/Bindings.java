@@ -9,7 +9,8 @@ import android.widget.TextView;
  */
 public class Bindings {
 
-    @BindingAdapter({"bind:font"})
+    //@BindingAdapter({"bind:font"})
+    @BindingAdapter({"font"})
     public static void setFont(TextView textView, String fontName) {
         textView.setTypeface(FontCache.getInstance(textView.getContext()).get(fontName));
     }
